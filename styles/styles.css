@@ -1,0 +1,157 @@
+*{
+  font-family: 'Inter', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+a,p,h1,h2,h3,h4{
+  color: #222;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  background-color: #F1F1FD;
+  max-width: 1150px;
+  margin:auto;
+  padding: 30px;
+  margin-top: 10px;
+}
+
+section{
+  scroll-margin-top: 7em;
+  width: 100%;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.header p {
+  margin: 10px 0 20px;
+  font-size: 1.2em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  background: rgba(241, 241, 253, 0.5);
+  border: 2px solid #222;
+  border-radius: 1rem;
+  padding: 10px 0;
+  position: sticky;
+  top: 12px;
+}
+
+.navbar a {
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 1rem;
+}
+
+.navbar a:hover {
+  color: #3f3f3f;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.section {
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 30%; 
+  margin: 10px;
+}
+
+.btn{
+  padding:8px 15px;
+  background: none;
+  border-radius: 0.5rem;
+  border: 2px solid #222;
+  color: #222;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+} 
+
+.btn:hover{
+  background-color: #222;
+  color:#fff ;
+}
+
+.horizontal-section {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-content {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.divder-container{
+  display: grid;
+  grid-template-columns:auto auto;
+  gap: 18px;
+  margin: auto;
+}
+
+.divider{
+  padding: 1px;
+  background: #222;
+  border-radius: 0.25rem;
+}
+
+.divider-vertical{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 500px;
+  border-radius: 0.5rem;
+}
+
+.profile-pic-front{
+  width: 300px;
+  border-radius: 0.5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap:20px;
+  padding: 20px;
+  background: #222;
+  border-radius: 1rem;
+}
+footer * {
+  color: #fff;
+}
+#introduction span{
+  font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-content {
+      flex-direction: column;
+      padding: 20px;
+  }
+  
+  .navbar a {
+      padding: 10px;
+      display: block;
+  }
+}

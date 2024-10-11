@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Developer Portfolio</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div>
+                <h1>Heisann! <span>👋</span> Jeg er Thomas Bolli</h1>
+            </div>
+            <p>Brenner for allting it og utvikling🚀</p>
+                
+        </div>
+    </header>
+    
+    <nav class="navbar">
+        <a href="#introduction">Om Meg</a>
+        <a href="#projects">Prosjekter</a>
+        <a href="#learning">Programmeringsøvinger </a>
+        <a href="mailto:thomas.bolli@outlook.com">Kontakt Meg</a>
+    </nav>
+    
+    <main class="main-content">
+        <section id="introduction" >
+            <div >
+                <h2>Om Meg</h2>
+                <div class="divder-container">
+                    <div style="max-width: 70ch;">
+                        <p>
+                            Heisann! Mitt navn er Thomas, og jeg er interessert i <span>🧑‍💻</span> programmering, <span>🎸</span> gitar og <br> <span>🚵</span> gode fjellturer. 
+                            I denne porteføljen forsøker jeg å dele mine prosjekter, erfaringer og lidenskaper med dere. 
+                        </p>
+                        <p>
+                            Jeg har alltid vært fascinert av teknologiens muligheter, og det var dette som først vekket min interesse for programmering. 
+                            Over tid har jeg utviklet ferdigheter innen ulike programmeringsspråk og rammeverk, som for eksempel Python, JavaScript, og React. 
+                            Jeg liker å kombinere teknisk kunnskap med kreativ problemløsning, og jeg brenner for å lage løsninger som både er funksjonelle og intuitive å bruke.
+                        </p>
+                    </div>
+                    <div style="display: flex; gap: 8px;">
+                        <div >
+                            <img src="./assets/tomas_bilde.jpg" alt="Profile Picture" class="profile-pic-front">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div>
+                <h2>Prosjekter</h2>
+                <div class="divider divider-vertical"></div>
+                <div>
+                    <div style="display: flex; gap:18px; margin-bottom: 30px;">
+                        <div>
+                            <b>Lego Projekt</b>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus et minus odit obcaecati omnis. Sint nostrum accusamus neque magnam, voluptate quod error sit eveniet nobis inventore voluptatum vitae, harum libero?</p>
+                            <a class="btn" href="#">
+                                Les mer 
+                            </a>
+                        </div>
+                        <div>
+                            <img src="./assets/lego_1.png" alt="Profile Picture" class="profile-pic">
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; gap:18px; margin-bottom: 30px;">
+                        <div>
+                            <img src="./assets/hardware_1.png" alt="Profile Picture" class="profile-pic">
+                        </div>
+                        <div>
+                            <b>Projekt i datamskinarkitektur</b>
+                            <p>
+                                I dette prosjektet ble vi satt til å utforske et spesifikt område innenfor datamaskinarkitektur. 
+                                Vi ble tildelt temaet minnehierarkier – et område jeg hadde særdeles lite kjennskap til fra før. 
+                            </p>
+
+                            <p>
+                                Resultatet? Masse læring og en god dose frustrasjon, men også en del aha-opplevelser! 
+                                Vi jobbet oss gjennom materialet, og til slutt lagde vi en video der vi forklarte hva minnehierarkier egentlig er (og hvorfor de er så viktige), 
+                                i tillegg til å skrive en rapport som beskrev både prosessen og det ferdige produktet. 
+                            </p>
+                            <p>
+                                Alt i alt var det både utfordrende og lærerikt, og jeg sitter igjen med en helt ny forståelse for hvordan datamaskiner faktisk får alt til å gå rundt 
+                                – nesten som magi, bare at magien her er basert på en hel del bytes og binære tall!
+    
+                            </p>
+                            <a class="btn" href="./data-architecture.html">
+                                Les mer 
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="learning">
+            <div>
+                <h2>Programmeringsøvinger</h2>
+                <div class="divider divider-vertical"></div>
+                <div style="max-width: 80ch;">
+                    <b>Øving nr.1</b>
+                    <p>Her lærte vi det grunnleggende i Java, inkludert alt fra hvordan man setter opp klasser og oppretter objekter, til instansiering og grunnleggende metoder. 
+                        Vi fokuserte på hvordan man kan bruke Java til å strukturere kode på en oversiktlig og vedlikeholdbar måte. 
+                        Dette ga meg et solid fundament og en forståelse av de viktigste prinsippene som brukes i objektorientert programmering.</p>
+                </div>
+
+                <div style="max-width: 80ch;">
+                    <b>Øving nr.2</b>
+                    <p>
+                        Her gikk vi mer i dybden på det vi lærte i øving 2, 
+                        med fokus på hvordan vi kan organisere og strukturere klasser ved å gruppere dem i datastrukturer som lister eller hashmaps. 
+                        Dette gjorde det mulig å håndtere flere objekter effektivt og åpnet for mer avansert bruk av Java, som iterasjon og søk gjennom ulike datasamlinger.</p>
+                </div>
+
+            </div>
+        </section>
+        
+
+    </main>
+    <footer>
+        <a href="https://github.com/Tbolli" target="_blank" style="cursor: pointer; display: flex; align-items: center;">
+            <img width="30px" src="./assets/logos/github-mark-white.png">
+        </a>
+        <p>© <span id="year-date">---</span> by Thomas Bolli. All rights reserved.</p>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
