@@ -17,6 +17,7 @@ body {
   margin:auto;
   padding: 30px;
   margin-top: 10px;
+  overflow-x: hidden;
 }
 
 section{
