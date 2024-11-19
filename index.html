@@ -8,17 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="header-content">
-            <div>
-                <h1>Heisann! <span>👋</span> Jeg er Thomas Bolli</h1>
-            </div>
-            <p>Brenner for allting it og utvikling🚀</p>
-                
-        </div>
-    </header>
     
-    <nav class="navbar">
+
+    <header class="div-wrapper header">
+        <div>
+            <h1>Heisann! <span>👋</span> Jeg er Thomas Bolli</h1>
+        </div>
+        <p>Brenner for allting it og utvikling🚀</p>
+    </header>
+
+    <nav class="div-wrapper navbar" style="margin-top:12px;"> 
         <a href="#introduction">Om Meg</a>
         <a href="#projects">Prosjekter</a>
         <a href="#learning">Programmeringsøvinger </a>
@@ -27,10 +26,11 @@
 
     <main class="main-content">
         <section id="introduction" >
-            <div >
-                <h2>Om Meg</h2>
+            <div class="div-wrapper">
                 <div class="divder-container">
-                    <div style="max-width: 70ch;">
+                    <div class="text-with-divder">
+                        <h2>Om Meg</h2>
+                        <div class="divider divider-vertical"></div>
                         <p>
                             Heisann! Mitt navn er Thomas, og jeg er interessert i <span>🧑‍💻</span> programmering, <span>🎸</span> gitar og <br> <span>🚵</span> gode fjellturer. 
                             I denne porteføljen forsøker jeg å dele mine prosjekter, erfaringer og lidenskaper med dere. 
@@ -51,7 +51,7 @@
         </section>
 
         <section id="projects">
-            <div>
+            <div class="div-wrapper">
                 <h2>Prosjekter</h2>
                 <div class="divider divider-vertical"></div>
                 <div>
@@ -72,9 +72,10 @@
                             </a>
                         </div>
                         <div>
-                            <img src="./assets/lego_1.png" alt="Lego robot" class="profile-pic">
+                            <img src="./assets/tomas_bilde.jpg" alt="Lego robot" class="profile-pic" style="width: 330px; height: 250px;">
                         </div>
                     </div>
+                <div class="divider divider-vertical"></div>
                     
                     <div style="display: flex; gap:18px; margin-bottom: 30px;">
                         <div>
@@ -102,6 +103,7 @@
                             </a>
                         </div>
                     </div>
+                <div class="divider divider-vertical"></div>
                     
                     <div style="display: flex; gap:18px; margin-bottom: 30px;">
                         <div>
@@ -120,16 +122,15 @@
                             </a>
                         </div>
                         <div>
-                            <img src="./assets/food-waste.png" alt="Matsvin prosjekt" class="profile-pic">
+                            <img src="./assets/food-waste.png" alt="Matsvin prosjekt" class="profile-pic" style="width: 180px;">
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
 
         <section id="learning">
-            <div>
+            <div class="div-wrapper">
                 <h2>Programmeringsøvinger</h2>
                 <div class="divider divider-vertical"></div>
                 <div style="max-width: 80ch;">
@@ -146,20 +147,16 @@
                         med fokus på hvordan vi kan organisere og strukturere klasser ved å gruppere dem i datastrukturer som lister eller hashmaps. 
                         Dette gjorde det mulig å håndtere flere objekter effektivt og åpnet for mer avansert bruk av Java, som iterasjon og søk gjennom ulike datasamlinger.</p>
                 </div>
-
             </div>
         </section>
-        
-
     </main>
-    <footer>
+
+    <footer class="div-wrapper">
         <a href="https://github.com/Tbolli" target="_blank" style="cursor: pointer; display: flex; align-items: center;">
             <img width="30px" src="./assets/logos/github-mark-white.png">
         </a>
         <p>© <span id="year-date">----</span> by Thomas Bolli. </p>
     </footer>
-
-
     
     <script src="script.js"></script>
 </body>

@@ -1,22 +1,48 @@
 *{
   font-family: 'Inter', sans-serif;
 }
+::selection {
+  background: #000;
+  color: #22C55E;
+}
 html{
   scroll-behavior: smooth;
 }
 a,p,h1,h2,h3,h4{
-  color: #222;
+  color: #ececec;
+}
+p{
+  font-size: 15px;
+}
+h2{
+  font-size: 20px;
 }
 body {
-  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  color: #222;
-  background-color: #F1F1FD;
+  color: #d3d3d3;
+
+  background-color: #0a0a0a  ; /* Base background color */
+  background-image: 
+    repeating-linear-gradient(
+      90deg, 
+      rgba(41, 41, 41), 
+      rgba(41, 41, 41) 1px, 
+      transparent 1px, 
+      transparent 70px
+    ),
+    repeating-linear-gradient(
+      0deg, 
+      rgba(41, 41, 41), 
+      rgba(41, 41, 41) 1px, 
+      transparent 1px, 
+      transparent 70px
+    );
+
+  /* background-color: #F1F1FD; */
   max-width: 1150px;
   margin:auto;
   padding: 30px;
-  margin-top: 10px;
   overflow-x: hidden;
 }
 
@@ -32,19 +58,26 @@ section{
 
 .header p {
   margin: 10px 0 20px;
-  font-size: 1.2em;
+  font-size: 1em;
+}
+.header h1{
+  font-size: 26px;
 }
 
 .navbar {
   display: flex;
   justify-content: center;
-  backdrop-filter: blur(10px);
-  background: rgba(241, 241, 253, 0.5);
-  border: 2px solid #222;
-  border-radius: 1rem;
-  padding: 10px 0;
   position: sticky;
   top: 12px;
+  margin: 0 auto;
+  padding:12px 0;
+  transition: margin 0.6s ease, background-color 0.3s linear;
+  backdrop-filter: blur(10px);
+}
+
+.navbar.shrink {
+  margin: 0 85px;
+  background-color : rgba(29, 29, 29, 0.6)
 }
 
 .navbar a {
@@ -55,29 +88,38 @@ section{
 }
 
 .navbar a:hover {
-  color: #3f3f3f;
+  color: #22C55E;
 }
 
 .main-content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 20px;
 }
 
 .section {
-  padding: 20px;
   text-align: center;
   flex: 1 1 30%; 
-  margin: 10px;
 }
 
+.div-wrapper{
+  background-color: #111111;
+  color: #fff;
+  padding: 12px;
+  border-radius: 1rem;
+  border: 2px solid #292929;
+  margin: 6px 0;
+}
+
+.div-wrapper:hover{
+  border-color: #22C55E;
+}
 .btn{
   padding:8px 15px;
   background: none;
   border-radius: 0.5rem;
-  border: 2px solid #222;
-  color: #222;
+  border: 2px solid #ececec;
+  color: #ececec;
   cursor: pointer;
   transition: 0.3s;
   font-size: 12px;
@@ -86,8 +128,8 @@ section{
 } 
 
 .btn:hover{
-  background-color: #222;
-  color:#fff ;
+  border-color: #22C55E;
+  color:#22C55E ;
 }
 
 .horizontal-section {
@@ -97,7 +139,7 @@ section{
 }
 
 .section-content {
-  max-width: 300px;
+  max-width: 200px;
   margin: 0 auto;
 }
 
@@ -110,13 +152,21 @@ section{
 
 .divider{
   padding: 1px;
-  background: #222;
-  border-radius: 0.25rem;
+  background: #1b1b1b;
+  border-radius: 0.5rem;
 }
 
 .divider-vertical{
   width: 100%;
   margin-bottom: 20px;
+}
+
+.text-with-divder{
+  max-width: 70ch;
+}
+
+.text-with-divder p,h2,h1{
+  padding:0 5px;
 }
 
 .profile-pic {
@@ -127,6 +177,7 @@ section{
 .profile-pic-front{
   width: 300px;
   border-radius: 0.5rem;
+  border: 1px solid #292929;
 }
 
 footer {
@@ -134,15 +185,18 @@ footer {
   justify-content: center;
   gap:20px;
   padding: 20px;
-  background: #222;
   border-radius: 1rem;
 }
-footer * {
-  color: #fff;
-}
+
+
 #introduction span{
   font-size: 18px;
 }
+#projects p{
+  padding-left: 4px;
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
