@@ -1,15 +1,23 @@
 *{
   font-family: 'Inter', sans-serif;
 }
+
+:root {
+  --main-bg-color: #0a0a0a;
+  --main-bg-line-color: #292929;
+  --main-highlight-color: #22C55E;
+  --main-text-color: #ececec;
+}
+
 ::selection {
   background: #000;
-  color: #22C55E;
+  color: var(--main-highlight-color);
 }
 html{
   scroll-behavior: smooth;
 }
-a,p,h1,h2,h3,h4{
-  color: #ececec;
+a,p,h1,h2,h3,h4,b{
+  color: var(--main-text-color);
 }
 p{
   font-size: 15px;
@@ -20,21 +28,19 @@ h2{
 body {
   margin: 0;
   padding: 0;
-  color: #d3d3d3;
-
-  background-color: #0a0a0a  ; /* Base background color */
+  background-color: var(--main-bg-color)  ; /* Base background color */
   background-image: 
     repeating-linear-gradient(
       90deg, 
-      rgba(41, 41, 41), 
-      rgba(41, 41, 41) 1px, 
+      var(--main-bg-line-color), 
+      var(--main-bg-line-color) 1px, 
       transparent 1px, 
       transparent 70px
     ),
     repeating-linear-gradient(
       0deg, 
-      rgba(41, 41, 41), 
-      rgba(41, 41, 41) 1px, 
+      var(--main-bg-line-color), 
+      var(--main-bg-line-color) 1px, 
       transparent 1px, 
       transparent 70px
     );
@@ -76,7 +82,8 @@ section{
 }
 
 .navbar.shrink {
-  margin: 0 85px;
+  margin-left: 85px;
+  margin-right: 85px;
   background-color : rgba(29, 29, 29, 0.6)
 }
 
@@ -88,7 +95,7 @@ section{
 }
 
 .navbar a:hover {
-  color: #22C55E;
+  color: var(--main-highlight-color);
 }
 
 .main-content {
@@ -105,21 +112,26 @@ section{
 .div-wrapper{
   background-color: #111111;
   color: #fff;
-  padding: 12px;
+  padding: 16px;
   border-radius: 1rem;
-  border: 2px solid #292929;
+  border: 2px solid var(--main-bg-line-color);
   margin: 6px 0;
 }
 
-.div-wrapper:hover{
-  border-color: #22C55E;
+.hover-none:hover{
+  border-color: var(--main-bg-line-color) !important;
 }
+
+.div-wrapper:hover{
+  border-color: var(--main-highlight-color);
+}
+
 .btn{
   padding:8px 15px;
   background: none;
   border-radius: 0.5rem;
-  border: 2px solid #ececec;
-  color: #ececec;
+  border: 2px solid var(--main-text-color);
+  color: var(--main-text-color);
   cursor: pointer;
   transition: 0.3s;
   font-size: 12px;
@@ -128,8 +140,8 @@ section{
 } 
 
 .btn:hover{
-  border-color: #22C55E;
-  color:#22C55E ;
+  border-color: var(--main-highlight-color);
+  color:var(--main-highlight-color) ;
 }
 
 .horizontal-section {
@@ -177,7 +189,19 @@ section{
 .profile-pic-front{
   width: 300px;
   border-radius: 0.5rem;
-  border: 1px solid #292929;
+  border: 1px solid var(--main-bg-line-color);
+}
+
+.practises-header-wrapper{
+  display: grid; 
+  grid-template-columns: 1fr 2fr; 
+  gap:0 12px;
+}
+
+.practises-wrapper{
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap:0 12px;
 }
 
 footer {
@@ -188,13 +212,32 @@ footer {
   border-radius: 1rem;
 }
 
-
 #introduction span{
   font-size: 18px;
 }
 #projects p{
   padding-left: 4px;
 }
+
+.text-highlight{
+  color: var(--main-highlight-color) !important;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.flicker {
+  display: inline-block;
+  animation: flicker-animation 1s infinite;
+}
+
+@keyframes flicker-animation {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+}
+
 
 
 
