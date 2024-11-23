@@ -10,7 +10,7 @@ window.addEventListener('scroll', () => {
     // Calculate degrees based on scroll position
     const scrollY = window.scrollY;
     // Optional: Change navbar class based on scroll position
-    if (scrollY > 200.5) { 
+    if (scrollY > 185.5) { 
       navbar.classList.add('shrink');
     } else {
       navbar.classList.remove('shrink');

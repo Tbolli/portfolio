@@ -74,9 +74,9 @@ section{
   display: flex;
   justify-content: center;
   position: sticky;
-  top: 12px;
+  top: 6px;
   margin: 0 auto;
-  padding:12px 0;
+  padding:12px 0 !important;
   transition: margin 0.6s ease, background-color 0.3s linear;
   backdrop-filter: blur(10px);
 }
@@ -92,6 +92,10 @@ section{
   text-decoration: none;
   font-weight: 600;
   border-radius: 1rem;
+  font-size: 15px;
+  position: relative;
+  right: 0;
+  top:0;
 }
 
 .navbar a:hover {
@@ -112,7 +116,7 @@ section{
 .div-wrapper{
   background-color: #111111;
   color: #fff;
-  padding: 16px;
+  padding: 22px;
   border-radius: 1rem;
   border: 2px solid var(--main-bg-line-color);
   margin: 6px 0;
@@ -122,9 +126,9 @@ section{
   border-color: var(--main-bg-line-color) !important;
 }
 
-.div-wrapper:hover{
+/* .div-wrapper:hover{
   border-color: var(--main-highlight-color);
-}
+} */
 
 .btn{
   padding:8px 15px;
@@ -173,9 +177,6 @@ section{
   margin-bottom: 20px;
 }
 
-.text-with-divder{
-  max-width: 70ch;
-}
 
 .text-with-divder p,h2,h1{
   padding:0 5px;
